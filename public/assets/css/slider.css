@@ -1,0 +1,43 @@
+
+  .img-slider {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+  }
+  .img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 10s infinite;
+  }
+  .img-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+  }
+  .img-slider .slider-container .slide img {
+    display: block;
+    width: 50%;
+    height: 25%;
+    background-size: fill;
+  }
+  @keyframes slider {
+    0%,
+    25%,
+    100% {
+      left: 0;
+    }
+
+    30%,
+    55% {
+      left: -100%;
+    }
+    60%,
+    85% {
+      left: -200%;
+    }
+  }
